@@ -9,7 +9,7 @@ class TaskTest {
 
     @Test
     fun task1Test() {
-        val numbers: MutableList<kotlin.Int> = mutableListOf(1, 4, 9, 16, 25)
+        val numbers: MutableList<kotlin.Int> = mutableListOf()
         assertEquals1(
             numbers.square(),
             listOf(1, 16, 81, 256, 625),
