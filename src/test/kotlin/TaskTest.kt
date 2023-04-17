@@ -81,7 +81,7 @@ class TaskTest {
         assertEquals1(
             numberRussianWords(975),
             actual = "девятьсот семьдесят пять",
-            "Operations on a collection and the sum of its elements"
+            "Write the number in Russian words"
         )
     }
 
