@@ -15,10 +15,12 @@ fun sumOfCollection(numbers: List<Double?>): Double {
     val checkingForOdd = numbers.filter { it!!.toInt() % 2 != 0 }.map { it!! / 2 }
     val newList = parityCheck.plus(checkingForOdd)
     newList
+        .asSequence()
         .filter { it!! < 25 }
         .filterNotNull()
         .sortedDescending()
         .take(10)
+        .toList()
         .forEach { sum += it }
 
     return (sum * 100.0).roundToInt() / 100.0
